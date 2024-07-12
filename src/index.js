@@ -59,6 +59,12 @@ client.on('messageCreate', async (message, inte) => {
 
 	if (!message.mentions.users.first()) return;
 	if (message.mentions.users.first().id !== client.user.id) return;
+	if (message.author.id !== '711803671155048499') {
+		message.channel.send(
+			"you're not my pookie bear Dikshyant Maharjan fuck off"
+		);
+		return;
+	}
 
 	const messageText = message.content.split(' ').slice(1).join(' ');
 	if (!messageText) return;
@@ -128,7 +134,7 @@ client.on('messageCreate', async (message, inte) => {
 
 function sendScheduledMessage(message) {
 	try {
-		const userIDs = ['711803671155048499', '724624773447024702'];
+		const userIDs = ['711803671155048499'];
 		userIDs.forEach((userID) => {
 			const user = client.users.cache.get(userID);
 			if (user) {

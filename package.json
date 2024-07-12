@@ -1,0 +1,26 @@
+{
+	"name": "dms-girfriend",
+	"version": "1.0.0",
+	"main": "src/index.js",
+	"scripts": {
+		"dev": "nodemon src/index.js",
+		"start": "node ."
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"async-mutex": "^0.5.0",
+		"cron": "^3.1.7",
+		"discord.js": "^14.15.3",
+		"dotenv": "^16.4.5",
+		"node_characterai": "^1.2.7",
+		"wokcommands": "^2.1.9"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.10",
+		"nodemon": "^3.1.4",
+		"tsx": "^4.16.2"
+	}
+}
